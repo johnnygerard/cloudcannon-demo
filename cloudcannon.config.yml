@@ -19,6 +19,7 @@ collections_config:
   pages:
     path: src/pages
     icon: wysiwyg
+    url: '[full_slug]'
     disable_url: false
     disable_add: false
     disable_add_folder: false
