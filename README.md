@@ -1,7 +1,7 @@
 # CloudCannon Demo
 
 ![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
-[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://cloudcannon-demo.mail-25a.workers.dev/)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://tranquil-ukulele.cloudvent.net/)
 
 ## Tech Stack
 
@@ -12,7 +12,7 @@
 
 ### Backend
 
-- **Hosting**: [Cloudflare Workers](https://workers.cloudflare.com/)
+- **Hosting**: [CloudCannon](https://cloudcannon.com/hosting/)
 
 ## How to Update
 
@@ -26,7 +26,7 @@ npm install --save-exact --save-dev prettier@latest prettier-plugin-astro@latest
 
 ## Notes
 
-- `.nvmrc` is used primarily as a way to specify the Node.js version for Cloudflare Workers (see [Build image](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/))
+- `.nvmrc` is used primarily as a way to specify the Node.js version for CloudCannon's build environment (see [Specifying your version](https://cloudcannon.com/documentation/articles/pin-your-dependency-version/#specifying-your-version)).
 - The GitHub Action `actions/setup-node@v6` relies on both `package.json` `engines` and `devEngines` to set the Node.js version and automatically cache npm dependencies.
 
 ## Dev Environment & Tools
