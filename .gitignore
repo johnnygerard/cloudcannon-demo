@@ -1,0 +1,15 @@
+# https://git-scm.com/docs/gitignore
+
+# Node.js dependencies
+/node_modules/
+
+# Astro
+/.astro/
+/.astro-cache/
+/dist/
+
+# Wrangler
+/.wrangler/
+# https://developers.cloudflare.com/workers/configuration/environment-variables/#local-development-with-secrets
+/.dev.vars*
+!.dev.vars.example

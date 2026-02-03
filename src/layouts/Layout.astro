@@ -1,0 +1,40 @@
+---
+import { Font } from "astro:assets";
+import Favicon from "~/components/Favicon.astro";
+import Footer from "~/components/Footer.astro";
+import Header from "~/components/Header.astro";
+import "~/styles/globals.css";
+
+type Props = {
+  title?: string;
+};
+
+const SITE_TITLE = "Orion Vale";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    {/* Google Fonts (self-hosted) */}
+    <Font cssVariable="--font-inter" preload={true} />
+    <Font cssVariable="--font-space-grotesk" preload={true} />
+    <Favicon />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {title ? `${title} | ${SITE_TITLE}` : `${SITE_TITLE} | Crypto Analyst`}
+    </title>
+  </head>
+  <body class="font-sans text-base">
+    {/* This wrapper prevents a body overflow in mobile browsers. */}
+    <div class="flex min-h-screen flex-col">
+      <Header />
+      <main class="grid flex-1 items-center">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

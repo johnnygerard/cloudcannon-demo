@@ -1,0 +1,47 @@
+---
+import { Picture } from "astro:assets";
+import cryptoHorizon from "~/assets/images/404-crypto-data-horizon.png";
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout title="404 – Page Not Found">
+  <div
+    class="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-16 text-center sm:py-24"
+  >
+    <hgroup class="space-y-3">
+      <p
+        class="text-sm font-semibold tracking-[0.25em] text-jet-black/50 uppercase"
+      >
+        404 Error
+      </p>
+      <h1 class="font-display text-4xl font-semibold text-onyx sm:text-5xl">
+        Page Not Found
+      </h1>
+    </hgroup>
+    <div
+      class="mx-auto w-full max-w-2xl overflow-hidden rounded-3xl border border-jet-black/10 bg-white shadow-sm"
+    >
+      <Picture
+        alt="Crypto data horizon illustration"
+        class="h-full w-full object-cover"
+        fallbackFormat="webp"
+        formats={["avif"]}
+        sizes="min(42rem, 100vw)"
+        src={cryptoHorizon}
+        widths={[320, 480, 640, 960, 1280, 1600, 1920]}
+      />
+    </div>
+    <p class="mx-auto max-w-xl text-base leading-relaxed text-jet-black/70">
+      Sorry, the page you are looking for does not exist or has been moved.
+    </p>
+
+    <div class="flex justify-center">
+      <a
+        href="/"
+        class="inline-flex items-center justify-center rounded-full border border-jet-black/10 bg-white px-6 py-3 text-sm font-semibold text-onyx shadow-sm transition hover:-translate-y-0.5 hover:border-jet-black/30 hover:shadow-md"
+      >
+        Back to Home
+      </a>
+    </div>
+  </div>
+</Layout>
