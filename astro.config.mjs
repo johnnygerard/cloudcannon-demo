@@ -37,7 +37,7 @@ export default defineConfig({
     ],
   },
   integrations: [sitemap()],
-  site: "https://astro-content-demo.mail-25a.workers.dev",
+  site: "https://cloudcannon-demo.mail-25a.workers.dev",
   trailingSlash: "never",
   vite: {
     plugins: [

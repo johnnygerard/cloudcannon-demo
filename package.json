@@ -42,7 +42,7 @@
     "node": "24",
     "npm": "11"
   },
-  "name": "astro-content-demo",
+  "name": "cloudcannon-demo",
   "private": true,
   "scripts": {
     "astro": "astro",
