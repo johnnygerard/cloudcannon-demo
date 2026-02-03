@@ -41,7 +41,7 @@
               "regexp": "start"
             },
             "endsPattern": {
-              "regexp": "Ready"
+              "regexp": "ready"
             }
           },
           "pattern": "$tsc"

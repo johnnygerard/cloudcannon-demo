@@ -52,7 +52,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
-    "preview": "astro preview",
+    "preview": "astro preview --port 4322",
     "qa": "npm run format:check && npm run lint && npm test && npm run build:check",
     "test": "vitest run",
     "test:watch": "vitest watch",
