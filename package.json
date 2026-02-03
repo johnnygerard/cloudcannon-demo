@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@astrojs/check": "^0.9.6",
-    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/sitemap": "^3.7.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
@@ -23,8 +22,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
     "vite-tsconfig-paths": "^6.0.5",
-    "vitest": "^4.0.18",
-    "wrangler": "^4.61.1"
+    "vitest": "^4.0.18"
   },
   "devEngines": {
     "packageManager": {
@@ -48,21 +46,18 @@
     "astro": "astro",
     "build": "astro build",
     "build:check": "npm run build && npm run check",
-    "cf-typegen": "wrangler types",
     "check": "tsc --noEmit && astro check",
-    "deploy": "npm run build && wrangler deploy",
     "dev": "astro dev",
     "docs": "astro docs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
-    "preview": "npm run build && wrangler dev",
+    "preview": "astro preview",
     "qa": "npm run format:check && npm run lint && npm test && npm run build:check",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "toolbar:disable": "astro preferences disable devToolbar",
-    "toolbar:enable": "astro preferences enable devToolbar",
-    "wrangler": "wrangler"
+    "toolbar:enable": "astro preferences enable devToolbar"
   },
   "type": "module",
   "version": "0.0.0"
